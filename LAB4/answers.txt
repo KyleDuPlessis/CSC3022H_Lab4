@@ -1,0 +1,25 @@
+***** Input training examples *****
+
+Origin Manufacturer Colour Decade Type Label
+Japan Honda Blue 1980 Sports Positive 
+Japan Toyota Green 1970 Sports Positive 
+Japan Toyota Blue 1990 Economy Negative 
+USA Chrysler Red 1980 Sports Negative 
+
+***** The Candidate Elimination algorithm *****
+
+S1: {(Japan, Honda, Blue, 1980, Sports)}
+G1: {(?, ?, ?, ?, ?)}
+
+S2: {(Japan, ?, ?, ?, Sports)}
+G2: {(?, ?, ?, ?, ?)}
+
+S3: {(Japan, ?, ?, ?, Sports)}
+G3: {(?, ?, ?, ?, Sports)}
+
+S4: {(Japan, ?, ?, ?, Sports)}
+G4: {(Japan, ?, ?, ?, Sports)}
+
+***** Learned the target concept *****
+
+Therefore, the minimum number of training examples to learn the above concept is 4.
